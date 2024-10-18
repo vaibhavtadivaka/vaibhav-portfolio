@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghu - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(45deg, black, red);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px beige;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: black;
+            border-bottom: 3px solid red;
+            display: inline-block;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        /* Skills section */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .skill {
+            background: red;
+            color: white;
+            padding: 15px 20px;
+            margin: 10px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            transition:  0.3s ease-in-out;
+        }
+
+        .skill:hover {
+            background: red;
+        }
+
+        /* Projects section */
+        .projects-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .projects-carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 300%;
+        }
+
+        .project {
+            min-width: 33.33%;
+            padding: 20px;
+            background: #f9f9fc;
+            margin-right: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: red;
+        }
+
+        .project p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        /* Carousel buttons */
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+
+        .prev-btn {
+            left: 10px;
+        }
+
+        .next-btn {
+            right: 10px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .project {
+                min-width: 100%;
+            }
+
+            .projects-carousel {
+                width: 300%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>K.Sai Raghava Deekshith</h1>
+        <p>Email: <a href="mailto:vaibhavtadivaka@gmail.com">kuruvaraghava1510@gmail.com</a> | Phone: <a href="tel:+918125905417">6304164303</a></p>
+    </header>
+
+    <div class="container">
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>MLR Institute of Technology</strong> - B.TECH, Information Technology (CGPA: 8.5*) <br> 2023 – Present</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">C Programming</div>
+                <div class="skill">CSS</div>
+                <div class="skill">Java</div>
+                <div class="skill">Teaching Skills</div>
+                <div class="skill">Python</div>
+                <div class="skill">Leadership</div>
+                <div class="skill">HTML</div>
+                <div class="skill">Adaptability</div>
+            </div>
+        </section>
+
+        <section">
+            <div class="container">
+              <div class="heading_container heading_center">
+                <h2>
+                  Projects
+                </h2>
+              </div>
+                <div>
+                  <div class="projects-carousel">
+                        <div class="project">
+                            <h3>Automatic Solar Tracking System</h3>
+                            <p><strong>Technologies:</strong> IoT, Arduino</p>
+                            <p><strong>Role:</strong> Team Lead</p>
+                            <p>Adjusts solar panels to follow the sun, boosting energy capture and efficiency.</p>
+                        </div>
+                  </div>
+                  <div class="projects-carousel">
+                        <div class="project">
+                            <h3>Seed Sowing Robot</h3>
+                            <p><strong>Technologies:</strong> IoT, Arduino</p>
+                            <p><strong>Role:</strong> Team Member</p>
+                            <p>A remote-controlled robot with an automated seed-sowing mechanism.</p>
+                        </div>
+                  </div>
+                  <div class="projects-carousel">
+                        <div class="project">
+                            <h3>LegalChat</h3>
+                            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                            <p><strong>Role:</strong> Team Lead</p>
+                            <p>Digital Assistant for Legal Awareness and KYR framework in India.</p>
+                        </div>
+                  </div>
+                </div>
+            </div>
+          </section>
+
+        
+
+        <section class="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li><strong>IoT Workshop</strong> - Secured 2nd place (2024)</li>
+                <li><strong>LitFest</strong> - Won Treasure Hunt and Litrivia (2024)</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+
+</html>
